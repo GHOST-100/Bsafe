@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+body{
+   background-image: url('https://wallpaperaccess.com/full/1667651.jpg');
+background-size: cover;
+
+
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+
+.card{
+  
+   background-color: rgb(13, 96, 134);
+   margin:40px;
+   margin-top: 50px;
+   margin-bottom: 60px;
+   border-radius: 20px;
+
+
+ 
+}
+
+.card-header{
+    background-color: aquamarine;
+  
+
+}
+
+.forgot{
+    color:white;
+    text-decoration: dotted;
+    font: 1em sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 1px black;
+    margin-top: 30px;
+  
+}
+.forgot:hover{
+    color:rgb(255, 5, 5);
+    text-decoration: dotted;
+}
+
+
+
+.home-html {
+
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    overflow-x: hidden;
+  }
+  
+  .home-html::-webkit-scrollbar {
+    width: 0.6rem;
+  }
+  
+  .home-html::-webkit-scrollbar-track {
+    background: #000;
+  }
+  
+  .home-html::-webkit-scrollbar-thumb {
+    background: #f00;
+  }
+  
+  form i {
+    margin-left: -30px;
+    cursor: pointer;
+   
+  
+}
+
+.custom-field{
+    position: relative;
+    font-size: 14px;
+    padding-top: 20px;
+    /* margin-top: 5px; */
+    margin-right: 20px;
+
+    margin-left: 17px;
+}
+
+.custom-field input{
+    padding: 9px;
+    width: 230px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1.5px solid rgb(0, 0, 0);
+    outline-color: rgb(100, 5, 5);
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+ .placeholder{
+    position: absolute;
+    left: 12px;
+    margin-top: 12px;
+font-weight: 500;
+font-size: 16px;
+    color: rgb(133, 1, 1);
+   
+}
+/* 
+.custom-field input:valid + .placeholder,
+.custom-field input:focus + .placeholder{
+    top: 1px;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    
+} */
+
+.message{
+    font-size: 70px;
+    font-family: 'Ubuntu', sans-serif;
+    color: steelblue;
+
+}
+
+.success{
+    font-size: 18px;
+    margin-top: 15px;
+    color: seagreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+.label{
+    color:white;
+    font-weight: 600;
+    font-size: 18px;
+    /* margin-right: 14px; */
+    text-shadow: 2px 1px black;
+ margin-left:-14px ;
+ margin-right: 10px;
+}
+
+.label-1{
+    color:white;
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 25px;
+    text-shadow: 2px 1px black;
+}
+
+  
+
+
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position:unset;
+    /* padding: 10px; */
+    margin-top: 90px;
+    height: fit-content;
+    border-radius: 0px 20px 20px 0px;
+  }
+  
+  #message p {
+  
+    font-size: 15px;
+    padding-left: 55px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+     
+  }
+  
+  .mobile{
+    display: none;
+  }
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+
+
+
+  /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ view port\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* 
+
+  @media(max-width:770px){
+  #letter,#capital,#length,#number,h6{
+    display: none;
+
+    }
+  } */
+
+
+
+
+    @media(max-width: 620px)
+    {
+
+
+      #loginForm{
+        padding: 0px;
+        margin: 0px;
+        zoom: 90%;
+      }
+
+      .label{
+        margin-top: 20px;
+      }
+   
+    }
+
+
+
+
+
+    @media(max-width: 525px)
+    {
+
+
+      .label{
+        color:white;
+        font-weight: 600;
+        font-size: 18px;
+        /* margin-right: 14px; */
+        text-shadow: 2px 1px black;
+     margin-left:12px ;
+     margin-right: 20px;
+     display: flex;
+     flex-direction: column;
+    }
+    
+    .label-1{
+        color:white;
+        font-weight: 600;
+        font-size: 18px;
+        margin-left:14px ;
+        /* margin-right: 25px; */
+        text-shadow: 2px 1px black;
+        display: flex;
+        flex-direction: column;
+    }
+    #loginForm{
+      padding: 0px;
+      margin: 0px;
+      zoom: 100%;
+    
+    }
+ #email{
+  margin-left: 17px;
+ }
+
+
+
+
+
+    }
+
+
+
+@media(max-width:480px){
+
+  .card{
+   zoom: 90%;
+  }
+
+#loginForm{
+  padding: 0px;
+
+  zoom: 100%;
+
+}
+
+}
+@media(max-width:450px){
+
+
+.label,.label-1{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.card{
+  margin: 20px;
+}
+.custom-field input{
+  padding: 10px;
+  width: 230px;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 1.5px solid rgb(0, 0, 0);
+  outline-color: rgb(100, 5, 5);
+  border-radius: 20px;
+  text-align: center;
+}
+}
+
+
+@media(max-width:370px){
+
+  #loginForm{
+   
+  
+    zoom: 90%;
+  
+  }
+}
+
+@media(max-width:335px){
+
+  body{
+   
+  
+    zoom: 90%;
+  
+  }
+}
+
+
+@media(max-width:311px){
+
+  body{
+   
+  
+    zoom: 85%;
+  
+  }
+}
+
+
+@media(max-width:290px){
+
+  body{
+   
+  
+    zoom: 83%;
+  
+  }
+}
+
+
+
